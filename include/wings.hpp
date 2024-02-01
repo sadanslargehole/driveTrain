@@ -89,3 +89,9 @@ inline void resetAll(){
     rightWing.setVelocity(0, vex::pct);
     leftWing.setVelocity(0, vex::pct);
 }
+inline void lockWings(){
+    leftWing.spinToPosition(0, vex::deg);
+    rightWing.spinToPosition(0, vex::deg);
+    leftWing.stop(vex::brakeType::hold);
+    rightWing.stop(vex::brakeType::hold);
+}

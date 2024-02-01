@@ -27,16 +27,13 @@ int updateHUD()
         // speed int
         myController.Screen.setCursor(0, 0);
         myController.Screen.clearScreen();
-        myController.Screen.print("Right:%dIsOn:%s", rv, getCanMove() ? "true" : "false");
+        myController.Screen.print("TEST MODE Right:%dIsOn:%s", rv, getCanMove() ? "true" : "false");
         myController.Screen.newLine();
         myController.Screen.print("Left:%dSpeed:1/%d", lv, getSpeed());
         vex::this_thread::sleep_for(500);
     }
     // if we get here we are having a bad day
     return -1;
-}
-void testTurn(){
-    turnDeg(90);
 }
 int main()
 {
@@ -50,6 +47,6 @@ int main()
     //init launcher
     initLaunch();
     myController.ButtonUp.pressed(toggleLaunch);
-    myController.ButtonX.pressed(testTurn);
+    myController.ButtonX.pressed(testAuto);
 
 }
