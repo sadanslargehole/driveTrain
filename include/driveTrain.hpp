@@ -8,13 +8,11 @@ static bool canMove = false;
 static bool lock = false;
 static double speed = .5;
 static vex::motor _l0(0);
-static vex::motor _l10(10);
 static vex::motor _l11(11);
 static vex::motor _r9(9, true);
-static vex::motor _r18(18, true);
 static vex::motor _r19(19, true);
-static vex::motor_group motorL(_l0, _l10, _l11);
-static vex::motor_group motorR(_r9, _r18, _r19);
+static vex::motor_group motorL(_l0, _l11);
+static vex::motor_group motorR(_r9, _r19);
 static vex::drivetrain mainAutoTrain(motorL, motorR);
 inline void initDriveTrain() {
   motorL.setVelocity(0, vex::pct);
@@ -75,7 +73,7 @@ inline void testAuto() {
     motorR.setVelocity(SPEEDAUTO, vex::pct);
   motorL.spinFor(FIRST_MOVE_DISTANCE, vex::rotationUnits::deg, false);
   motorR.spinFor(FIRST_MOVE_DISTANCE, vex::rotationUnits::deg, true);
-  
+
   motorL.spinFor(FIRST_TURN_DEGREE, vex::rotationUnits::deg, false);
   motorR.spinFor(-FIRST_TURN_DEGREE, vex::rotationUnits::deg, true);
 
