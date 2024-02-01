@@ -1,0 +1,29 @@
+{
+    "files.associations": {
+        "*.v5cpp": "cpp",
+        "cstdlib": "cpp",
+        "chrono": "cpp",
+        "cmath": "cpp",
+        "cstdarg": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "ctime": "cpp",
+        "exception": "cpp",
+        "limits": "cpp",
+        "ratio": "cpp",
+        "*.tcc": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "functional": "cpp",
+        "array": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cwchar": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    }
+}
